@@ -1,0 +1,11 @@
+{
+  "experiment_name": "vit_base_32x32",
+  "model": "vit_base",
+  "noc_size_x": 32,
+  "noc_size_y": 32,
+  "node_latency": 1,
+  "fc1_input": 768,
+  "fc1_output": 3072,
+  "fc2_input": 3072,
+  "fc2_output": 768
+}

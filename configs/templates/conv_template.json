@@ -1,0 +1,20 @@
+{
+  "experiment_name": "custom_conv_experiment",
+  "noc_size_x": 12,
+  "noc_size_y": 12,
+  "node_latency": 1,
+  "num_pixels_per_packet": 4,
+  "layers": [
+    {
+      "label": "MY_CONV",
+      "network": "CustomNet",
+      "ifmap_side_original": 224,
+      "ifmap_side": 226,
+      "ifmap_depth": 3,
+      "kernel_side": 3,
+      "kernel_number": 64,
+      "ofmap_side": 224,
+      "ofmap_depth": 64
+    }
+  ]
+}

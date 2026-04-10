@@ -1,0 +1,11 @@
+{
+  "experiment_name": "gpt2_medium_64x64",
+  "model": "gpt2_medium",
+  "noc_size_x": 64,
+  "noc_size_y": 64,
+  "node_latency": 1,
+  "fc1_input": 1024,
+  "fc1_output": 4096,
+  "fc2_input": 4096,
+  "fc2_output": 1024
+}

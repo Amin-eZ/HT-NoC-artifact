@@ -1,0 +1,11 @@
+{
+  "experiment_name": "custom_ffn_experiment",
+  "model": "custom_ffn",
+  "noc_size_x": 32,
+  "noc_size_y": 32,
+  "node_latency": 1,
+  "fc1_input": 192,
+  "fc1_output": 768,
+  "fc2_input": 768,
+  "fc2_output": 192
+}

@@ -1,0 +1,38 @@
+{
+  "experiment_name": "section_6_2_4_dw_12x12",
+  "model": "mobilenet",
+  "noc_size_x": 12,
+  "noc_size_y": 12,
+  "num_pixels_per_packet": 4,
+  "node_latency": 1,
+  "layers": [
+    {
+      "label": "DW1",
+      "kernel_side": 3,
+      "ifmap_side_original": 112,
+      "ifmap_side": 114,
+      "ifmap_depth": 32
+    },
+    {
+      "label": "DW3",
+      "kernel_side": 3,
+      "ifmap_side_original": 56,
+      "ifmap_side": 58,
+      "ifmap_depth": 128
+    },
+    {
+      "label": "DW5",
+      "kernel_side": 3,
+      "ifmap_side_original": 28,
+      "ifmap_side": 30,
+      "ifmap_depth": 256
+    },
+    {
+      "label": "DW7",
+      "kernel_side": 3,
+      "ifmap_side_original": 14,
+      "ifmap_side": 16,
+      "ifmap_depth": 512
+    }
+  ]
+}

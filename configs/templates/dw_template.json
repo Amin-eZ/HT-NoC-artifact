@@ -1,0 +1,19 @@
+{
+  "experiment_name": "custom_dw_experiment",
+  "model": "CustomNet",
+  "noc_size_x": 12,
+  "noc_size_y": 12,
+  "num_pixels_per_packet": 4,
+  "node_latency": 1,
+  "layers": [
+    {
+      "label": "MY_DW",
+      "kernel_side": 3,
+      "ifmap_side_original": 112,
+      "ifmap_side": 114,
+      "ifmap_depth": 32,
+      "ofmap_side": 112,
+      "ofmap_depth": 32
+    }
+  ]
+}

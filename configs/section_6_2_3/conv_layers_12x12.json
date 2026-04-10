@@ -1,0 +1,89 @@
+{
+  "experiment_name": "section_6_2_3_conv_12x12",
+  "noc_size_x": 12,
+  "noc_size_y": 12,
+  "node_latency": 1,
+  "num_pixels_per_packet": 4,
+
+  "layers": [
+
+    {
+      "label": "CONV2",
+      "network": "VGG16",
+      "ifmap_side_original": 224,
+      "ifmap_side": 226,
+      "ifmap_depth": 64,
+      "kernel_side": 3,
+      "kernel_number": 64,
+      "ofmap_side": 224,
+      "ofmap_depth": 64
+    },
+    {
+      "label": "CONV3",
+      "network": "VGG16",
+      "ifmap_side_original": 112,
+      "ifmap_side": 114,
+      "ifmap_depth": 64,
+      "kernel_side": 3,
+      "kernel_number": 128,
+      "ofmap_side": 112,
+      "ofmap_depth": 128
+    },
+    {
+      "label": "CONV4",
+      "network": "VGG16",
+      "ifmap_side_original": 112,
+      "ifmap_side": 114,
+      "ifmap_depth": 128,
+      "kernel_side": 3,
+      "kernel_number": 128,
+      "ofmap_side": 112,
+      "ofmap_depth": 128
+    },
+    {
+      "label": "CONV5",
+      "network": "VGG16",
+      "ifmap_side_original": 56,
+      "ifmap_side": 58,
+      "ifmap_depth": 128,
+      "kernel_side": 3,
+      "kernel_number": 256,
+      "ofmap_side": 56,
+      "ofmap_depth": 256
+    },
+    {
+      "label": "CONV6",
+      "network": "VGG16",
+      "ifmap_side_original": 56,
+      "ifmap_side": 58,
+      "ifmap_depth": 256,
+      "kernel_side": 3,
+      "kernel_number": 256,
+      "ofmap_side": 56,
+      "ofmap_depth": 256
+    },
+    {
+      "label": "CONV8",
+      "network": "VGG16",
+      "ifmap_side_original": 28,
+      "ifmap_side": 30,
+      "ifmap_depth": 256,
+      "kernel_side": 3,
+      "kernel_number": 512,
+      "ofmap_side": 28,
+      "ofmap_depth": 512
+    },
+    {
+      "label": "CONV10",
+      "network": "VGG16",
+      "ifmap_side_original": 28,
+      "ifmap_side": 30,
+      "ifmap_depth": 512,
+      "kernel_side": 3,
+      "kernel_number": 512,
+      "ofmap_side": 28,
+      "ofmap_depth": 512
+    }
+
+  ]
+}

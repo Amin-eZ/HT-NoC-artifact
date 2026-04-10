@@ -1,0 +1,16 @@
+{
+  "experiment_name": "custom_pw_experiment",
+  "model": "CustomNet",
+  "noc_size_x": 12,
+  "noc_size_y": 12,
+  "node_latency": 1,
+  "alpha_values": [1.0, 0.5, 0.25],
+  "layers": [
+    {
+      "label": "MY_PW",
+      "ifmap_side": 112,
+      "ifmap_depth": 32,
+      "number_filters": 64
+    }
+  ]
+}

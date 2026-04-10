@@ -1,0 +1,11 @@
+{
+  "experiment_name": "transformer_64x64",
+  "model": "transformer",
+  "noc_size_x": 64,
+  "noc_size_y": 64,
+  "node_latency": 1,
+  "fc1_input": 512,
+  "fc1_output": 2048,
+  "fc2_input": 2048,
+  "fc2_output": 512
+}

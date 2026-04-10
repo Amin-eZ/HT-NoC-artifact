@@ -1,0 +1,74 @@
+{
+  "experiment_name": "section_6_2_2_fc_12x12",
+  "noc_size_x": 12,
+  "noc_size_y": 12,
+  "node_latency": 1,
+  "layers": [
+    {
+      "label": "FC M1",
+      "network": "MobileNetV1",
+      "input_size": 1024,
+      "output_size": 1000
+    },
+    {
+      "label": "FC M2",
+      "network": "MobileNetV2",
+      "input_size": 1280,
+      "output_size": 1000
+    },
+    {
+      "label": "FC1 TR",
+      "network": "Transformer",
+      "input_size": 512,
+      "output_size": 2048
+    },
+    {
+      "label": "FC2 TR",
+      "network": "Transformer",
+      "input_size": 2048,
+      "output_size": 512
+    },
+    {
+      "label": "FC ResNet",
+      "network": "ResNet-50",
+      "input_size": 2048,
+      "output_size": 1000
+    },
+    {
+      "label": "FC16 VGG-16",
+      "network": "VGG-16",
+      "input_size": 4096,
+      "output_size": 1000
+    },
+    {
+      "label": "FC1 ViT-B",
+      "network": "ViT-Base",
+      "input_size": 768,
+      "output_size": 3072
+    },
+    {
+      "label": "FC2 ViT-B",
+      "network": "ViT-Base",
+      "input_size": 3072,
+      "output_size": 768
+    },
+    {
+      "label": "FC1 DeiT-S",
+      "network": "DeiT-S",
+      "input_size": 384,
+      "output_size": 1536
+    },
+    {
+      "label": "FC2 DeiT-S",
+      "network": "DeiT-S",
+      "input_size": 1536,
+      "output_size": 384
+    },
+    {
+      "label": "FC2 Bert-L",
+      "network": "Bert-Large",
+      "input_size": 4096,
+      "output_size": 1024
+    }
+  ]
+}

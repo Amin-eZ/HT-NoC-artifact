@@ -1,0 +1,11 @@
+{
+  "experiment_name": "gpt2_small_64x64",
+  "model": "gpt2_small",
+  "noc_size_x": 64,
+  "noc_size_y": 64,
+  "node_latency": 1,
+  "fc1_input": 768,
+  "fc1_output": 3072,
+  "fc2_input": 3072,
+  "fc2_output": 768
+}

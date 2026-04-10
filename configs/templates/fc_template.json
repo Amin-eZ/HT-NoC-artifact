@@ -1,0 +1,14 @@
+{
+  "experiment_name": "custom_fc_experiment",
+  "noc_size_x": 12,
+  "noc_size_y": 12,
+  "node_latency": 1,
+  "layers": [
+    {
+      "label": "MY_FC",
+      "network": "CustomNet",
+      "input_size": 1024,
+      "output_size": 1000
+    }
+  ]
+}

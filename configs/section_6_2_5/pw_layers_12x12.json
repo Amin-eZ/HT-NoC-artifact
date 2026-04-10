@@ -1,0 +1,54 @@
+{
+  "experiment_name": "section_6_2_5_pw_12x12",
+  "noc_size_x": 12,
+  "noc_size_y": 12,
+  "node_latency": 1,
+  "alpha_values": [1.0, 0.5, 0.25],
+  "layers": [
+    {
+      "label": "PW1",
+      "network": "MobileNetV1",
+      "ifmap_side": 112,
+      "ifmap_depth": 32,
+      "number_filters": 64,
+      "ofmap_side": 112,
+      "ofmap_depth_base": 64
+    },
+    {
+      "label": "PW2",
+      "network": "MobileNetV1",
+      "ifmap_side": 56,
+      "ifmap_depth": 64,
+      "number_filters": 128,
+      "ofmap_side": 56,
+      "ofmap_depth_base": 128
+    },
+    {
+      "label": "PW3",
+      "network": "MobileNetV1",
+      "ifmap_side": 56,
+      "ifmap_depth": 128,
+      "number_filters": 128,
+      "ofmap_side": 56,
+      "ofmap_depth_base": 128
+    },
+    {
+      "label": "PW4",
+      "network": "MobileNetV1",
+      "ifmap_side": 28,
+      "ifmap_depth": 128,
+      "number_filters": 256,
+      "ofmap_side": 28,
+      "ofmap_depth_base": 256
+    },
+    {
+      "label": "PW5",
+      "network": "MobileNetV1",
+      "ifmap_side": 28,
+      "ifmap_depth": 256,
+      "number_filters": 256,
+      "ofmap_side": 28,
+      "ofmap_depth_base": 256
+    }
+  ]
+}
