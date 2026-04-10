@@ -46,22 +46,23 @@ def plot_latency(rows, out_path):
     baseline_x = [i - width / 2 for i in x]
     htnoc_x = [i + width / 2 for i in x]
 
-    ax.bar(baseline_x, baseline_ifmap, width, label="Ifmap")
+    ax.bar(baseline_x, baseline_filter, width, label="Filter (Baseline)")
     ax.bar(
         baseline_x,
-        baseline_filter,
+        baseline_ifmap,
         width,
-        bottom=baseline_ifmap,
-        label="Filter",
+        bottom=baseline_filter,
+        label="Ifmap (Baseline)",
     )
 
-    ax.bar(htnoc_x, htnoc_ifmap, width, label="_nolegend_")
+    ax.bar(htnoc_x, htnoc_ifmap, width, label="Filter (HT-NoC)", color = "red")
     ax.bar(
         htnoc_x,
-        htnoc_filter,
+        htnoc_ifmap,
         width,
-        bottom=htnoc_ifmap,
-        label="_nolegend_",
+        bottom=htnoc_filter,
+        label="Ifmap (HT-NoC)",
+        color = "green",
     )
     ax.bar(
         htnoc_x,
